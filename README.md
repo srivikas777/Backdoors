@@ -11,7 +11,6 @@ This repository contains code and files related to the backdoor detection projec
 - Models: `10-Threshold-model.h5`, `4-Threshold-model.h5`, `2-Threshold-model.h5`.
 - Datasets: Ensure to add the required datasets from the provided link to the repository.
 - [GitHub Repository](https://github.com/csaw-hackml/)
-- `.ipynb_checkpoints`: Jupyter notebook checkpoints folder.
 
 ## How to Run
 1. Clone the repository.
