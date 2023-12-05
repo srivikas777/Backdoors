@@ -8,15 +8,17 @@ This repository contains code and files related to the backdoor detection projec
 ## Files and Structure
 - `sp6904-backdoors.ipynb`: Jupyter notebook containing the main code.
 - `backdoor_report.pdf`: Report document providing insights into the project.
-- Pre-trained models: `10-Threshold-model.h5`, `4-Threshold-model.h5`, `2-Threshold-model.h5`.
-- Datasets: `valid.h5`, `bd_test.h5`, `bd_valid.h5`, `test.h5`, `bd_net.h5`, `bd_weights.h5`.
+- Models: `10-Threshold-model.h5`, `4-Threshold-model.h5`, `2-Threshold-model.h5`.
+- Datasets: Ensure to add the required datasets from the provided link to the repository.
+- [GitHub Repository](https://github.com/csaw-hackml/)
 - `.ipynb_checkpoints`: Jupyter notebook checkpoints folder.
 
 ## How to Run
 1. Clone the repository.
-2. Open the Jupyter notebook (`sp6904-backdoors.ipynb`) using the Jupyter interface.
-3. If you are using Google Colab, it is recommended to have Google Colab Pro for sufficient memory.
-4. Execute the code cells sequentially within the notebook.
+2. Add the necessary datasets from the provided link to the repository.
+3. Open the Jupyter notebook (`sp6904-backdoors.ipynb`) using the Jupyter interface.
+4. If you are using Google Colab, it is recommended to have Google Colab Pro for sufficient memory.
+5. Execute the code cells sequentially within the notebook.
 
 ## 01. Overview
 This project involves designing a backdoor detector for BadNets trained on the YouTube Face dataset using the pruning defense discussed in class. The task is to create a repaired BadNet (G) with N+1 classes, where G should output class N+1 if the input is backdoored and the correct class if the input is clean. The pruning defense involves removing one channel at a time from the last convolution layer of BadNet, in increasing order of average activation values over the entire validation set. The pruning process stops when the validation accuracy drops at least X% below the original accuracy.
